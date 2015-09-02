@@ -85,5 +85,24 @@ public class Book {
     }
   }
 
+  public List<Author> getAuthors() {
+    try(Connection con = DB.sql2o.open()) {
+      String sql = "SELECT authors.* FROM books JOIN authors_books ON (books.id = authors_books.books_id) JOIN authors ON (authors_books.authors_id = authors.id) WHERE books.id = :id";
+      List<Author> authors = con.createQuery(sql)
+        .addParameter("id", id)
+        .executeAndFetch(Author.class);
+        return authors;
+      }
+  }
+
+  public List<Book> getCopies(){
+    try(Connection con = DB.sql2o.open()) {
+      String sql = "SELECT copies.* FROM books JOIN copies_books ON (books.id = copies_books.books_id) JOIN copies ON (copies_books.copies_id = copies.id) WHERE books.id = :id";
+      List<Book> copies = con.createQuery(sql)
+      .addParameter("id", id)
+      .executeAndFetch(Book.class);
+      return copies;
+    }
+  }
 
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PatronTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-09-02T18:30:16" hostname="epicodus-111.local" time="0.072">
+<testsuite name="PatronTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-09-02T20:49:59" hostname="epicodus-111.local" time="0.076">
   <properties/>
-  <testcase name="update_PatronName" classname="PatronTest" time="0.018"/>
+  <testcase name="update_PatronName" classname="PatronTest" time="0.021"/>
   <testcase name="getId_returnsIdAfterSave" classname="PatronTest" time="0.014"/>
   <testcase name="delete_FromDatabase_true" classname="PatronTest" time="0.018"/>
-  <testcase name="all_EmptyAtFirst" classname="PatronTest" time="0.01"/>
-  <testcase name="getName_returnName" classname="PatronTest" time="0.006"/>
-  <testcase name="equals_returnsTrueWhenParamsMatch" classname="PatronTest" time="0.005"/>
+  <testcase name="all_EmptyAtFirst" classname="PatronTest" time="0.009"/>
+  <testcase name="getName_returnName" classname="PatronTest" time="0.004"/>
+  <testcase name="equals_returnsTrueWhenParamsMatch" classname="PatronTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
